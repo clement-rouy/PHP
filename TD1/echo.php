@@ -18,6 +18,31 @@
 
           // On écrit le contenu de la variable 'texte' dans la page Web
           echo $texte;
-        ?>
+        
+        $prenom="Helmut";
+        echo "<br/> Bonjour $prenom,<br/> ça farte ?";
+
+        $prenom = "Marc";
+        echo "<br/> Bonjour " . $prenom;
+        echo " <br/> Bonjour $prenom";
+        echo '<br/> Bonjour $prenom <br/>';
+
+        echo $prenom;
+        echo "<br/> $prenom <br/>";
+
+        /*$marque = "Renault";
+        $couleur = "bleu";
+        $immatriculation = "256AB34";
+
+        echo "Voiture $immatriculation de marque $marque (couleur $couleur)";*/
+
+        $voiture = array(
+          'marque' => 'Renault',
+          'couleur' => 'bleu',
+          'immatriculation' => '256AB34');
+        echo "Voiture {$voiture['immatriculation']} de marque {$voiture['marque']} (couleur {$voiture['couleur']})";
+
+
+      ?>
     </body>
 </html> 
